@@ -1,101 +1,123 @@
-import Image from "next/image";
+import Image from 'next/image';
+import { Separator } from '@/components/ui/separator';
+import { MoveUpRight } from 'lucide-react';
+import ReviewCarousel from '@/components/review-carousel';
+import Footer from '@/components/footer';
 
 export default function Home() {
-  return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+  const images = [
+    { src: '/asado2.jpg', alt: 'Placeholder 2' },
+    { src: '/choripan.jpg', alt: 'Placeholder 3' },
+    { src: '/choripan2.jpg', alt: 'Placeholder 3' },
+    { src: '/entrecot.jpeg', alt: 'Placeholder 3' },
+    { src: '/provoleta.jpg', alt: 'Placeholder 2' },
+    { src: '/ensalada.jpg', alt: 'Placeholder 3' },
+  ];
+  const images2 = [
+    { src: '/tabbule.jpg', alt: 'Placeholder 3' },
+    { src: '/hummus.jpg', alt: 'Placeholder 3' },
+    { src: '/panini.jpg', alt: 'Placeholder 3' },
+    { src: '/mollete.jpg', alt: 'Placeholder 3' },
+    { src: '/empanada1.jpg', alt: 'Placeholder 3' },
+    { src: '/empanada2.jpg', alt: 'Placeholder 3' },
+  ];
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+  return (
+    <div className='w-full space-y-8'>
+      <div className='grid w-full flex-1 grid-cols-1 md:grid-cols-2 gap-2 md:gap-4'>
+        {images.map((image, index) => (
+          <div
+            key={index}
+            className='w-full aspect-[4/3] relative overflow-hidden shadow'
           >
             <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
+              src={image.src}
+              alt={image.alt}
+              fill
+              sizes='100vw'
+              className='object-cover'
             />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+          </div>
+        ))}
+      </div>
+
+      <Separator />
+      <ReviewCarousel />
+      <Separator />
+
+      <div className='grid w-full flex-1 grid-cols-1 md:grid-cols-2 gap-2 md:gap-4'>
+        {images2.map((image, index) => (
+          <div
+            key={index}
+            className='w-full aspect-[4/3] relative overflow-hidden shadow'
           >
-            Read our docs
+            <Image
+              src={image.src}
+              alt={image.alt}
+              fill
+              sizes='100vw'
+              className='object-cover'
+            />
+          </div>
+        ))}
+      </div>
+      <div className='grid w-full flex-1 grid-cols-1 md:grid-cols-2 gap-2 md:gap-4'>
+        <div className='space-y-8 flex flex-col'>
+          <h2 className='lg:text-3xl text-xl text-red-950 italic'>
+            Dónde estamos
+          </h2>
+          <p className='font-medium text-balance'>
+            Nos encuentras en Els Magazinos, el mercado gastronómico y cultural
+            de Dénia.
+          </p>
+          <a
+            href='https://maps.app.goo.gl/yDbMbs4VYxrZKD689'
+            target='_blank'
+            className='p-3 border flex items-center justify-between border-red-950 hover:bg-accent'
+          >
+            Google Maps
+            <MoveUpRight className='w-4 h-4' />
           </a>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <div className='w-full aspect-[4/3] relative overflow-hidden shadow'>
           <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
+            src={'/magazinos.jpg'}
+            alt={'Els Magazinos, Denia, Alicante'}
+            fill
+            sizes='100vw'
+            className='object-cover'
           />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        </div>
+      </div>
+      <Separator />
+      <div
+        id='contacto'
+        className='grid w-full flex-1 grid-cols-1 md:grid-cols-2 gap-2 md:gap-4'
+      >
+        <div className='w-full aspect-[4/3] relative overflow-hidden shadow'>
           <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
+            src={'/magazinos2.jpeg'}
+            alt={'Els Magazinos, Denia, Alicante'}
+            fill
+            sizes='100vw'
+            className='object-cover'
           />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+        </div>
+        <div className='space-y-8 flex flex-col'>
+          <h2 className='lg:text-3xl text-xl text-red-950 italic'>Contacto</h2>
+          <p className='font-medium text-balance'>
+            ¿Tienes alguna pregunta o necesitas más información? ¡Estamos aquí
+            para ayudarte!
+          </p>
+          <p>
+            Contáctanos al <strong>+34 645 06 82 42</strong> y estaremos
+            encantados de atenderte.
+          </p>
+        </div>
+      </div>
+
+      <Separator />
+      <Footer />
     </div>
   );
 }
