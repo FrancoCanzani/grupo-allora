@@ -6,49 +6,27 @@ import SideMenu from '@/components/side-menu';
 const cinzel = Cinzel_Decorative({ subsets: ['latin'], weight: ['400'] });
 
 export const metadata: Metadata = {
-  title: 'Grupo Allora - Cocina Argentina y Libanesa Auténtica',
+  title: 'Patagonia - Cocina Argentina y Libanesa en Denia, Alicante',
   description:
-    'Disfruta de los sabores auténticos de Argentina y Líbano en Grupo Allora. Empanadas gourmet, parrillas argentinas y platos libaneses tradicionales en un ambiente vibrante.',
+    'Descubre Patagonia, un restaurante único en Denia, Alicante. Disfruta de auténticos sabores argentinos y libaneses: empanadas gourmet, parrillas y platos tradicionales en un ambiente encantador.',
   keywords: [
-    'Grupo Allora',
-    'Allora Denia',
     'Patagonia Denia',
-    'Allora Magazinos',
-    'comida argentina',
+    'restaurante en Denia',
     'comida argentina en Denia',
-    'comida argentina en Alicante',
-    'comida libanesa',
     'comida libanesa en Denia',
-    'empanadas argentinas',
-    'parrillas gourmet',
-    'restaurantes en Denia',
-    'Els Magazinos',
+    'empanadas en Denia',
+    'parrilla argentina',
+    'restaurantes Denia Alicante',
+    'cocina argentina y libanesa',
     'Els Magazinos Denia',
+    'mejores restaurantes en Denia',
   ],
-  authors: [{ name: 'Grupo Allora', url: 'https://grupoallora.com' }],
-  openGraph: {
-    title: 'Grupo Allora - Cocina Argentina y Libanesa Auténtica',
-    description:
-      'Disfruta de los sabores auténticos de Argentina y Líbano en Grupo Allora. Empanadas gourmet, parrillas argentinas y platos libaneses tradicionales en un ambiente vibrante.',
-    url: 'https://grupoallora.com',
-    siteName: 'Grupo Allora',
-    images: [
-      {
-        url: 'https://grupoallora.com/og-image.jpg', // Reemplaza con la URL de tu imagen OG
-        width: 1200,
-        height: 630,
-        alt: 'Grupo Allora - Cocina Argentina y Libanesa Auténtica',
-      },
-    ],
-    locale: 'es_ES',
-    type: 'website',
-  },
+  authors: [{ name: 'Patagonia Denia', url: 'https://patagoniadenia.com' }],
   twitter: {
     card: 'summary_large_image',
-    title: 'Grupo Allora - Cocina Argentina y Libanesa Auténtica',
+    title: 'Patagonia - Cocina Argentina y Libanesa en Denia, Alicante',
     description:
-      'Disfruta de los sabores auténticos de Argentina y Líbano en Grupo Allora. Empanadas gourmet, parrillas argentinas y platos libaneses tradicionales en un ambiente vibrante.',
-    // images: ['https://grupoallora.com/twitter-image.jpg'],
+      'Descubre Patagonia, un restaurante único en Denia, Alicante. Disfruta de auténticos sabores argentinos y libaneses: empanadas gourmet, parrillas y platos tradicionales en un ambiente encantador.',
   },
   robots: {
     index: true,
