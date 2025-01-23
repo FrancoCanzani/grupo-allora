@@ -56,8 +56,7 @@ export default function History() {
               Disfruta de los auténticos sabores de Argentina, elaborados
               frescos cada día con un cuidado artesanal. Nuestras empanadas
               estrella lucen rellenos tentadores como cebolla y provolone, cerdo
-              y ciruela, ternera y verduras asadas, o mozzarella y vegetales
-              mixtos.
+              y ciruela, ternera y especias, o mozzarella y vegetales asados.
             </p>
           </div>
         </div>
@@ -67,13 +66,13 @@ export default function History() {
         <div className='grid w-full flex-1 grid-cols-1 md:grid-cols-2 gap-2 md:gap-4 space-y-8'>
           <div className='space-y-8 flex flex-col'>
             <h2 className='lg:text-3xl text-xl text-red-950 italic'>
-              Patagonia{' '}
+              Patagonia
             </h2>
             <p className='text-lg'>
               En nuestro local, somos verdaderos maestros de las carnes, como
               buenos argentinos. Aquí disfrutarás de carnes extremadamente
-              tiernas, preparadas con cortes argentinos y acompañadas de
-              exquisitas salsas caseras.
+              tiernas, preparadas con cortes argentinos y acompañadas de nuestra
+              exquisita salsa casera.
             </p>
           </div>
           <div className='w-full aspect-[4/3] relative overflow-hidden shadow'>
@@ -107,7 +106,7 @@ export default function History() {
               Cocina del Mediterráneo Oriental, sobre todo del Líbano. Los
               inmigrantes libaneses en Argentina estuvieron ligados a nuestra
               niñez, y compartimos sus costumbres y comidas. Descubre platos
-              como el kepe al horno, hummus, shawarma y falafel.
+              como el kofta, hummus, shawarma y falafel.
             </p>
           </div>
         </div>

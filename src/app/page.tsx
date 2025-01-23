@@ -61,7 +61,10 @@ export default function Home() {
           </div>
         ))}
       </div>
-      <div className='grid w-full flex-1 grid-cols-1 md:grid-cols-2 gap-2 md:gap-4'>
+
+      <Separator />
+
+      <div className='grid w-full flex-1 grid-cols-1 md:grid-cols-2 gap-2 md:gap-4 lg:space-y-0 space-y-8'>
         <div className='space-y-8 flex flex-col'>
           <h2 className='lg:text-3xl text-xl text-red-950 italic'>
             Dónde estamos
@@ -92,7 +95,7 @@ export default function Home() {
       <Separator />
       <div
         id='contacto'
-        className='grid w-full flex-1 grid-cols-1 md:grid-cols-2 gap-2 md:gap-4'
+        className='grid w-full flex-1 grid-cols-1 md:grid-cols-2 gap-2 md:gap-4 lg:space-y-0 space-y-8'
       >
         <div className='w-full aspect-[4/3] relative overflow-hidden shadow'>
           <Image

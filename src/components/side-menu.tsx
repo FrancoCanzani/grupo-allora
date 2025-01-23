@@ -5,7 +5,7 @@ export default function SideMenu() {
   return (
     <nav className='w-full static lg:sticky top-3 lg:w-1/3 lg:h-[95vh] h-fit flex flex-col items-center justify-start text-balance text-center space-y-8'>
       <Link href={'/'} className='font-bold text-4xl text-red-950'>
-        Grupo Allora
+        Patagonia
       </Link>
       <Separator />
       <span className='font-medium'>

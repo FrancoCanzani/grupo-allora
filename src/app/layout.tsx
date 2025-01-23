@@ -75,10 +75,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='es'>
-      {' '}
-      {/* Cambiado a español */}
       <body className={`${cinzel.className} antialiased w-full p-3`}>
-        <main className='flex w-full items-start justify-between gap-3 flex-col lg:flex-row'>
+        <main className='flex w-full items-start justify-between gap-3 space-y-8 lg:space-y-0 flex-col lg:flex-row'>
           <SideMenu />
           {children}
         </main>
