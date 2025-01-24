@@ -45,10 +45,35 @@ Aquí nos pareció curioso las empanadas y pedimos 2 diferentes y su masa y rell
   },
   {
     id: 4,
-    name: 'Kiko 283',
+    name: 'Rafael Muñoz',
     rating: 5,
     comment: `Buen sitio argentino en Els Magazinos de Denia.
 Las empanadas argentinas buenísimas todas y la entraña con especias espectacular, para secarse las lágrimas.`,
+  },
+  {
+    id: 5,
+    name: 'Kiko 283',
+    rating: 5,
+    comment: `Muy buen sitio para probar comida argentina, a buen precio y una buena calidad, el trato cercano y atento, mos buscaron sitio en seguida, nos informaron incluso de cortes de carne que no tenian en carta, el chimichurri espectacular, nada que ver con el de los supermercados, casero…. Las raciones amplias, y todo muy bien presentado, eso si esta en magazinos y tienes que comer en mesa alta, pero si eso te va esta genial!!!!!`,
+  },
+  {
+    id: 6,
+    name: 'Jon Reyes Gonzalez',
+    rating: 5,
+    comment: `Buena comida, buen trato. Lugar perfecto si pillas sitio en el mercado Els Magasinos. A destacar las bravas y las empanadas.`,
+  },
+  {
+    id: 7,
+    name: 'Roberto Garcia Peña',
+    rating: 5,
+    comment: `Rapidez para atenderte y en traerte la comida, productos caseros y deliciosos.
+Atencion muy buena por parte de las camareras.`,
+  },
+  {
+    id: 8,
+    name: 'Fer M',
+    rating: 5,
+    comment: `Muy lindo lugar, la comida de buena calidad y a mí parecer los precios son normales. Los empleados muy amables.`,
   },
 ];
 
